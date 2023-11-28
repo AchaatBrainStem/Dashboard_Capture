@@ -49,5 +49,6 @@ def send_img_to_line(name_of_screen_shot, token=your_line_token, text='Test Imag
     # session_post = requests.post('https://notify-api.line.me/api/notify', headers=header, files=file_img)
     print(session_post.text)
 
+print(100*"-")
 capture_screen_url(url_to_capture, filename_to_send)
 send_img_to_line(name_of_screen_shot='dashboard.png')
